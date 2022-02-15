@@ -1,0 +1,14 @@
+#title {
+	text-align: center;
+}
+
+button {
+	margin: auto;
+}
+
+div {
+	width: 100px;
+	height: 100px;
+	margin: 2px;
+	background-color: blue;
+}
