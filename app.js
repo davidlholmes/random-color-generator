@@ -7,6 +7,11 @@ button.addEventListener('click', () => {
 	console.log(random1);
 	console.log(random2);
 	console.log(random3);
-	let bg = document.querySelector('div');
-	bg.style.backgroundColor = `rgb(${random1}, ${random2}, ${random3})`;
-})
+	let bg = document.getElementsByClassName('color');
+	for (i = 0; i < bg.length; i++) {
+		bg[i].style.backgroundColor = `rgb(${random1}, ${random2}, ${random3})`;
+	}
+}
+)
+	
+	
