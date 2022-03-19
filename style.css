@@ -25,3 +25,30 @@ footer button {
 	display: grid;
 	margin-top: 50px;
 }
+
+footer div {
+	display: grid;
+	margin: auto;
+	margin-top: 25px;
+	max-width: 300px;
+}
+
+#redDisplay {
+	display: inline;
+	width: 25px;
+	height: 25px;
+}
+
+#blueDisplay {
+	width: 25px;
+	height: 25px;
+}
+
+#greenDisplay {
+	width: 25px;
+	height: 25px;
+}
+
+#submit {
+	margin-bottom: 25px;
+}
