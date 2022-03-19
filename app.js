@@ -2,16 +2,29 @@ let chooseRandomButton = document.getElementById("chooseRandomButton");
 
 let bg = document.getElementsByClassName('color');
 
+let randomArray = [];
+
 chooseRandomButton.addEventListener('click', () => {
-	let random1 = Math.round(Math.random() * 255);
-	let random2 = Math.round(Math.random() * 255);
-	let random3 = Math.round(Math.random() * 255);
-	
-	for (i = 0; i < bg.length; i++) {
-		bg[i].style.backgroundColor = `rgb(${random1}, ${random2}, ${random3})`;
+	for (i = 0; i < 3; i++) {
+		randomArray[i] = Math.round(Math.random() * 255);
 	}
-}
-)
+
+	for (i = 0; i < bg.length; i++) {
+		bg[i].style.backgroundColor = `rgb(${randomArray[0]}, ${randomArray[1]}, ${randomArray[2]})`;
+	}
+
+	if (!!document.getElementById("paragraph")) {
+		document.querySelector("#hiddenPG").removeChild(paragraph);
+	  let paragraph = document.createElement("p");
+  	paragraph.setAttribute("id", "paragraph");
+	  paragraph.innerText = `The selected color value is rgb(${randomArray[0]}, ${randomArray[1]}, ${randomArray[2]}).`;
+	} else {
+		let paragraph = document.createElement("p");
+  	paragraph.setAttribute("id", "paragraph");
+	  paragraph.innerText = `The selected color value is rgb(${randomArray[0]}, ${randomArray[1]}, ${randomArray[2]}).`;
+		document.querySelector("#hiddenPG").appendChild(paragraph);
+	}
+})
 
 let redInput = document.querySelector("#redInput");
 let blueInput = document.querySelector("#blueInput");
