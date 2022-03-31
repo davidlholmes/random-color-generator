@@ -6,7 +6,7 @@ button {
 	margin: auto;
 }
 
-main {
+.color-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
@@ -14,27 +14,38 @@ main {
 	margin: auto;
 }
 
-main div {
+.color-container div {
 	width: 100px;
 	height: 100px;
 	margin: 2px;
 	background-color: blue;
 }
 
-footer button {
+#hiddenPG,
+#sliderPrompt {
+  text-align: center;
+}
+
+.sliders button {
 	display: grid;
 	margin-top: 50px;
 }
 
-footer div {
+.sliders .colorName,
+.sliders .colorDisplay,
+#redInput,
+#greenInput,
+#blueInput {
 	display: grid;
 	margin: auto;
-	margin-top: 25px;
+	margin-top: 10px;
 	max-width: 300px;
+}
+.colorName {
+	margin-bottom: 1px;
 }
 
 #redDisplay {
-	display: inline;
 	width: 25px;
 	height: 25px;
 }
@@ -54,8 +65,8 @@ footer div {
 }
 
 .slider {
-	margin-top: 30px;
-	margin-bottom: 100px;
+	margin-top: 5px;
+	margin-bottom: 30px;
 }
 
 .colorDisplay {
@@ -64,25 +75,35 @@ footer div {
 
 span {
 	margin: auto;
-	font-size: 25px;
+	font-size: 15px;
 }
 
 #redName {
 	background-color: red;
+	width: 50px;
 }
 
 #greenName {
 	background-color: green;
+	width: 50px;
 }
 
 #blueName {
 	background-color: blue;
+	width: 50px;
 }
 
 .colorName {
 	color: white;
-	padding: 10px;
+	padding: 5px;
 	border-radius: 25%;
 }
 
-@media 
+
+
+
+@media (min-width: 700px) {
+  main {
+    column-count: 2;
+	}
+}

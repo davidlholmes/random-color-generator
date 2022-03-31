@@ -12,32 +12,44 @@
 		<h1 id="title">Color Generator</h1>
 	</header>
 	<main>
-		<div class="color"></div>
-		<div class="color"></div>
-		<div class="color"></div>
-		<div class="color"></div>
-		<div class="color"></div>
-		<div class="color"></div>
-		<div class="color"></div>
-		<div class="color"></div>
-		<div class="color"></div>
-	</main>
-	<footer>
-		<div>
+		<div class="color-container">
+		  <div class="color"></div>
+		  <div class="color"></div>
+	  	<div class="color"></div>
+	   	<div class="color"></div>
+		  <div class="color"></div>
+	   	<div class="color"></div>
+	  	<div class="color"></div>
+	  	<div class="color"></div>
+	  	<div class="color"></div>
+	</div>
+		<div class="sliders">
 			<button id="chooseRandomButton">Choose Random Color</button><br>
 			<div id="hiddenPG"></div>
-			<p>Or use the sliders to build it yourself below:</p><br>
-			<!--<input type="text" id="redInput" placeholder="How much red? (Between 0 and 255.)">
-			<input type="text" id="blueInput" placeholder="How much blue? (Between 0 and 255.)">
-			<input type="text" id="greenInput" placeholder="How much green? (Between 0 and 255.)">-->
-			<div id="redName" class="colorName"><span>RED</span></div><div id="redDisplay" class="colorDisplay"></div>
+			<p id="sliderPrompt">Or use the sliders to build it yourself below:</p><br>
+			<div id="redName" class="colorName">
+				<span>RED</span>
+			</div>
+			<div id="redDisplay" class="colorDisplay">
+			</div>
 			<input type="range" min="0" max="255" value="0" class="slider" id="redInput">
-			<div id="greenName" class="colorName"><span>GREEN</span></div><div id="greenDisplay" class="colorDisplay"></div>
+
+			<div id="greenName" class="colorName">
+				<span>GREEN</span>
+			</div>
+			<div id="greenDisplay" class="colorDisplay">
+			</div>
 			<input type="range" min="0" max="255" value="0" class="slider" id="greenInput">
-			<div id="blueName" class="colorName"><span>BLUE</span></div><div id="blueDisplay" class="colorDisplay"></div>
+
+			<div id="blueName" class="colorName">
+				<span>BLUE</span>
+			</div>
+			<div id="blueDisplay" class="colorDisplay"></div>
 			<input type="range" min="0" max="255" value="0" class="slider" id="blueInput">
 			<button id="submitSliders">Submit Your Slider Settings</button>
 		</div>
+	</main>
+	<footer>
 	</footer>
 	<script src="app.js"></script>
 </body>
